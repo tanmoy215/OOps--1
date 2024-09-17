@@ -1,15 +1,30 @@
 #include<bits/stdc++.h>
 using namespace std;
 class student{
-    public:
-     int age;  //data member
-     int roll;
+    private:
+      int age;
+      int roll;
+      public:
+      string name= "Tanmoy Majee";
+     void setage(int n){
+        age = n;
+     }
+     void setroll(int roll){
+        this->roll  = roll;
+     }
+     int getage(){
+        return age;
+     }
+     int getroll(){
+        return roll;
+     }
 };
 int main(){
     student amit;
-    amit.age = 48;
-    amit.roll=2039;
-    cout<<amit.age<<endl;
-    cout<<amit.roll<<endl;
+     cout<<amit.name<<endl;
+     amit.setage(23);
+     amit.setroll(215);
+     cout<<amit.getage()<<endl;
+     cout<<amit.getroll()<<endl;
     return 0;
 }
